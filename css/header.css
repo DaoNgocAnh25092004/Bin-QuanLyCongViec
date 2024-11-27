@@ -1,0 +1,117 @@
+header {
+    height: 80px;
+    width: 100%;
+    background-image: radial-gradient(circle at center, #009045, #006837);
+    border-bottom: 3px solid #FFDEA8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+}
+
+header>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 375.2px !important;
+    padding: 0 8px;
+}
+
+#logo {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.đầuTrang__giảiThưởng {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #004723;
+    margin-bottom: -5px;
+    transform: scale(1.2);
+}
+
+.đầuTrang__giảiThưởng>div:first-child {
+    width: 35px;
+}
+
+.đầuTrang__giảiThưởng>div:first-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.đầuTrang__giảiThưởng__thôngTin--sốLượng {
+    font-weight: 500;
+    margin-bottom: -2px;
+    font-size: 14px;
+}
+
+.đầuTrang__giảiThưởng__thôngTin div:last-child {
+    width: 60px;
+}
+
+.đầuTrang__giảiThưởng__thôngTin div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.đầuTrang__giảiThưởng__thôngTin--sốLượng span {
+    font-weight: 900;
+    font-style: italic;
+    text-shadow: 1px 1px 2px #00d266;
+    font-size: 18px;
+    margin: 0 4px 0 4px;
+    transform: scale(0.4);
+}
+
+
+.đầuTrang__giảiThưởng__thôngTin div:first-child p:last-child {
+    margin: 0 0 2px 5px;
+}
+
+
+.đầuTrang__ngườiDùng:last-child {
+    color: var(--white-color);
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.đầuTrang__ngườiDùng:last-child>div:last-child {
+    width: 35px;
+    height: 35px;
+    border-radius: 100rem;
+    overflow: hidden;
+}
+
+.đầuTrang__ngườiDùng:last-child>div:last-child img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.đầuTrang__ngườiDùng:last-child>div:first-child>div:first-child {
+    font-weight: 900;
+}
+
+.đầuTrang__ngườiDùng:last-child>div:first-child>div:last-child {
+    font-size: 11px;
+    text-align: end;
+    margin-top: -5px;
+}

@@ -1,0 +1,144 @@
+#thôngBáoThànhCông,
+#thôngBáoCảnhBáo,
+#thôngBáoLogin {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1000000;
+}
+
+#thôngBáoThànhCông > div,
+#thôngBáoCảnhBáo > div {
+  width: 375.2px !important;
+  position: fixed;
+  margin-bottom: 80px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10px;
+}
+
+#thôngBáoThànhCông > div > div {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #a5bf94;
+  border-radius: 20px;
+  background-color: #f5ffeb;
+  color: #472000;
+  padding: 10px 20px;
+}
+
+#thôngBáoCảnhBáo > div > div {
+  width: 100%;
+  border: 1px solid #c1bca0;
+  border-radius: 20px;
+  background-color: #fff8d9;
+  padding: 10px 20px;
+}
+
+.thôngBáo-thêmThànhCông,
+.thôngBáo-cảnhBáo {
+  display: flex;
+  align-items: center;
+  animation: fadeInOut 3s;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.thôngBáo-thêmThànhCông > div:first-child,
+.thôngBáo-cảnhBáo > div:first-child {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thôngBáo-thêmThànhCông > div:first-child img,
+.thôngBáo-cảnhBáo > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.thôngBáo-thêmThànhCông > div:last-child span {
+  font-weight: 800;
+  color: var(--darkBlue-color);
+}
+.thôngBáo-cảnhBáo > div:last-child {
+  line-height: 15px;
+  font-size: 15px;
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 2px;
+}
+
+.thôngBáo-cảnhBáo > div:last-child span {
+  font-weight: 800;
+  color: #472000;
+}
+.nộiDungTinNhắnThànhCông {
+  margin-left: 10px;
+}
+
+/* login */
+#thôngBáoLogin > div {
+  width: 375.2px !important;
+  position: fixed;
+  top: 320px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#thôngBáoLogin > div > div {
+  background-color: #09453a;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  border-radius: 20px;
+  width: 280px;
+  height: 30px;
+  padding: 20px 20px 20px 15px;
+  animation: fadeInOut 3s forwards;
+}
+#thôngBáoLogin > div > div > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+#thôngBáoLogin > div > div > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#thôngBáoLogin > div > div > div:last-child {
+  font-weight: 400;
+  font-size: 14px;
+}

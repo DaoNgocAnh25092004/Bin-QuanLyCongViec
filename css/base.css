@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkBlue-color: #006838;
+    --lightBlue-color: #009045;
+    --white-color: #fff;
+    --yellow-color: #FFDEA8;
+}
+
+html {
+    font-family: "Nunito Sans", sans-serif;
+}
+/* Thư viện */
+.padding-width {
+    padding: 0 10px !important;
+}
+.hide {
+    display: none !important;
+}

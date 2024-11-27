@@ -1,0 +1,215 @@
+footer,
+.thanhGửiNộiDung {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: var(--darkBlue-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 999;
+  margin-bottom: -2px;
+}
+footer.thêmViệcBắtĐầu,
+.thanhGửiNộiDung.thêmViệcBắtĐầu {
+  animation: thêmViệcBắtĐầu 0.2s linear;
+}
+footer.thêmViệcOut,
+.thanhGửiNộiDung.thêmViệcOut {
+  animation: thêmViệcKếtThúc 0.2s linear;
+}
+
+@keyframes thêmViệcBắtĐầu {
+  0% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes thêmViệcKếtThúc {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+}
+
+.thanhGửiNộiDung > div {
+  width: 375.2px !important;
+}
+footer > div > div,
+.thanhGửiNộiDung > div > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.chânTrang__btnThêmViệc {
+  width: 105px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chânTrang__btnThêmViệc img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chânTrang__tìmKiếm {
+  position: relative;
+}
+
+.chânTrang__tìmKiếm input {
+  padding: 0 15px;
+  border-radius: 10px;
+  border: var(--darkBlue-color);
+  height: 43px;
+  outline: none;
+  width: 210px;
+}
+
+.chânTrang__tìmKiếm input::placeholder {
+  font-style: italic;
+  color: #c1c0c0;
+}
+
+.chânTrang__tìmKiếm div {
+  position: absolute;
+  width: 20px;
+  top: -2px;
+  right: 10px;
+  transform: translateY(50%);
+}
+
+.chânTrang__boxThêmViệc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+}
+
+.chânTrang__tìmKiếm img,
+.chânTrang__boxThêmViệc--input img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chânTrang__dsXemSau {
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chânTrang__dsXemSau img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chânTrang__boxThêmViệc--input {
+  position: relative;
+  width: 100%;
+}
+
+.chânTrang__boxThêmViệc--input input {
+  padding: 0 35px 0 15px;
+  border-radius: 10px;
+  border: var(--darkBlue-color);
+  height: 43px;
+  outline: none;
+  min-width: 255px;
+  width: 100%;
+}
+
+.chânTrang__boxThêmViệc--input input::placeholder {
+  font-style: italic;
+  color: #c1c0c0;
+}
+
+.chânTrang__boxThêmViệc--gửi > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chânTrang__boxThêmViệc--gửi {
+  position: relative;
+  margin-left: 45px;
+}
+
+.chânTrang__boxThêmViệc--gửi > div:first-child {
+  position: relative;
+  z-index: 2;
+  width: 51px;
+}
+.chânTrang__boxThêmViệc--gửi > div:last-child {
+  position: absolute;
+  width: 70px;
+  top: 3px;
+  left: -45px;
+}
+
+.chânTrang__boxThêmViệc--gửi img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chânTrang__boxThêmViệc--input div {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: translateY(50%);
+  width: 20px;
+}
+
+.chânTrang__boxThêmViệc--menuFile {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.chânTrang__boxThêmViệc--menuFile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.chânTrang__boxThêmViệc--input.input-ThêmViệc > input {
+  min-width: 135px;
+}
+
+/* Hội menu gửi khi thêm file */
+
+.menu__gửiFileKhiThêmCôngViệc {
+  top: -90px;
+  left: 0;
+  box-shadow: -1px 2px 10px #c8c8c8;
+  border: 0.01px solid var(--lightBlue-color);
+  border-radius: 20px;
+  border-bottom: 3px solid var(--lightBlue-color);
+}
+.menu__gửiFileKhiThêmCôngViệc > div {
+  width: 115px;
+}
+.chânTrang__boxThêmViệc--input input {
+  font-size: 16px;
+}
+.chânTrang__boxThêmViệc--input input::placeholder {
+  font-size: 13px;
+}

@@ -1,0 +1,166 @@
+#hộTrợThiếtBị {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+  background-color: #fff;
+  z-index: 99999999;
+}
+#hộTrợThiếtBị > div:first-child {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+}
+
+#hộTrợThiếtBị > div:nth-child(2) {
+  position: absolute;
+  inset: 0;
+}
+#hộTrợThiếtBị > div:nth-child(2) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.e-card {
+  background: #fff;
+  box-shadow: 0px 8px 28px -9px rgba(0, 0, 0, 0.45);
+  position: relative;
+  max-width: 1000px;
+  max-height: 1500px;
+  border-radius: 16px;
+  padding: 50px;
+  overflow: hidden;
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7);
+}
+
+.wave {
+  position: absolute;
+  width: 1300px;
+  height: 1200px;
+  opacity: 0.6;
+  background: linear-gradient(744deg, #006838, #009045 60%);
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 210px;
+}
+
+.playing .wave {
+  border-radius: 40%;
+  animation: wave 3000ms infinite linear;
+}
+
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+.playing .wave:nth-child(2) {
+  animation-duration: 4000ms;
+}
+
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+.playing .wave:nth-child(3) {
+  animation-duration: 5000ms;
+}
+
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hộTrợThiếtBị__nộiDung {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.hộTrợThiếtBị__nộiDung > h1 {
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+.hộTrợThiếtBị__nộiDung img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hộTrợThiếtBị__nộiDung > h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+.hộTrợThiếtBị__nộiDung > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin: 50px 0;
+}
+.hộTrợThiếtBị__nộiDung > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hộTrợThiếtBị__nộiDung > h2:nth-child(4) {
+  font-size: 28px;
+  font-weight: 700;
+}
+.hộTrợThiếtBị__nộiDung > h2:nth-child(5) {
+  font-size: 21px;
+}
+.hộTrợThiếtBị__nộiDung > h2:nth-child(6) {
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 740px) {
+  .e-card {
+    max-width: 1000px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .hộTrợThiếtBị__nộiDung {
+    padding: 0 10px;
+  }
+  .hộTrợThiếtBị__nộiDung > h1 {
+    font-size: 25px;
+  }
+  .hộTrợThiếtBị__nộiDung > h2 {
+    font-size: 15px;
+  }
+  .hộTrợThiếtBị__nộiDung > h2:nth-child(4) {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .hộTrợThiếtBị__nộiDung > h2:nth-child(5) {
+    font-size: 15px;
+  }
+  .hộTrợThiếtBị__nộiDung > div {
+    margin: 30px 0;
+    width: 100px;
+  }
+}

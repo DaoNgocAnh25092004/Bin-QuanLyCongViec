@@ -1,0 +1,850 @@
+#tiếnTrìnhXửLý {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes hiểnThịTiếnTrình {
+  0% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ẩnTiếnTrình {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+}
+
+#mànHìnhMờTiếnTrình {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px) opacity(0.8);
+  z-index: 0;
+  animation: hiệnMànHìnhMờ 0.5s ease-in-out;
+}
+
+@keyframes hiệnMànHìnhMờ {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+#mànHìnhMờTiếnTrình.ẩnMànHìnhMờTiếnTrình {
+  animation: ẩnMànHìnhMờTiếnTrình 0.5s ease-in-out;
+}
+
+@keyframes ẩnMànHìnhMờTiếnTrình {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.tiếnTrìnhXửLý__tiêuĐề {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  top: 120px;
+  box-shadow: 0 5px 5px #ffff;
+  animation: hiểnThịTiếnTrình 0.5s ease-in-out;
+  z-index: 9;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề.ẩnTiếnTrình {
+  animation: ẩnTiếnTrình 0.5s ease-in-out;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề > div,
+.tiếnTrìnhXửLý__côngCụ > div,
+.tiếnTrìnhXửLý__tinNhắn > div,
+.tiếnTrìnhXửLý__fileTrướcKhiGửi > div {
+  width: 375.2px !important;
+  margin: 0 auto;
+}
+
+.tiếnTrìnhXửLý__tinNhắn {
+  position: absolute;
+  width: 100%;
+  height: 100% !important;
+  top: 160px;
+  background-color: #fff;
+  border: none;
+  animation: hiểnThịTiếnTrình 0.5s ease-in-out;
+}
+
+.tiếnTrìnhXửLý__tinNhắn.ẩnTiếnTrình {
+  animation: ẩnTiếnTrình 0.5s ease-in-out;
+}
+
+.tiếnTrìnhXửLý__côngCụ {
+  position: absolute;
+  width: 100%;
+  height: 65px;
+  background-color: #006838;
+  bottom: -5px;
+  border: none;
+  transition: all 0.5 linear;
+  z-index: 9999;
+  animation: hiểnThịTiếnTrình 0.5s ease-in-out;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #cdcdcd;
+  bottom: 60px;
+  transition: all 0.5 linear;
+  z-index: 4;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi > div > div > div {
+  position: relative;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
+  font-size: 13px;
+  margin-left: 10px;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--hìnhẢnh__boxChứa {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -90px;
+  left: 0;
+  gap: 5px;
+  background-color: #ffffff;
+  box-shadow: -1px 1px 10px #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  animation: hiệnFileXemTrước 0.5s linear;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--video__boxChứa,
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--tàiLiệu__boxChứa {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px #ccc;
+  border-bottom: 3px solid #ccc;
+  animation: hiệnFileXemTrước 0.5s linear;
+}
+@keyframes hiệnFileXemTrước {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--video__boxChứa > div,
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--tàiLiệu__boxChứa > div {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 30px;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--video__boxChứa > div > div:first-child,
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--tàiLiệu__boxChứa > div > div:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: -3px;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--hìnhẢnh__boxChứa > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi--hìnhẢnh__boxChứa > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__fileTrướcKhiGửi > div > div > div > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: linear-gradient(to top, #fafafa, #e4e4e4);
+  border-radius: 20px;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 1px #dddddd;
+  color: #545454;
+  position: relative;
+  transition: all 0.5s linear;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi
+  > div
+  > div
+  > div
+  > div:first-child.fileTrướcKhiGửiChọn {
+  background-image: radial-gradient(circle at center, #006837, #009045);
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi
+  > div
+  > div
+  > div
+  > div:first-child
+  > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8px;
+}
+.tiếnTrìnhXửLý__fileTrướcKhiGửi
+  > div
+  > div
+  > div
+  > div:first-child
+  > div:nth-child(2)
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__côngCụ.ẩnTiếnTrình {
+  animation: ẩnTiếnTrình 0.5s ease-in-out;
+}
+.xácNhậnYêuCầuĐồngÝ.ẩnTiếnTrình {
+  animation: ẩnTiếnTrình 0.5s ease-in-out;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: #fff;
+  padding: 10px;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--tên {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkBlue-color);
+  gap: 10px;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--tên > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--tên > div:last-child {
+  color: var(--darkBlue-color);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 800;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--tên > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--thôngTin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -3px 10px 0 0;
+  color: #666666;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--thôngTin div:first-child {
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: 700;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--thôngTin div:last-child {
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -5px;
+}
+
+.tiếnTrìnhXửLý__côngCụ--ôNhập {
+  position: relative;
+  transition: all 0.5s linear;
+}
+
+.tiếnTrìnhXửLý__côngCụ--ôNhập input {
+  padding: 0 35px 0 15px;
+  border-radius: 25px;
+  border: var(--darkBlue-color);
+  height: 40px;
+  width: 250px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.5s linear;
+}
+.tiếnTrìnhXửLý__côngCụ.xácNhậnYêuCầuKhông > div > div:first-child input {
+  width: 305px;
+}
+.tiếnTrìnhXửLý__côngCụ.xácNhậnYêuCầuĐồngÝ
+  .tiếnTrìnhXửLý__côngCụ--ôNhập.ẩnHiệnGửiKèmFileTiếnTrình {
+  position: relative;
+  width: 250px;
+  transition: all 0.5s linear;
+}
+.tiếnTrìnhXửLý__côngCụ.xácNhậnYêuCầuĐồngÝ
+  .tiếnTrìnhXửLý__côngCụ--ôNhập.ẩnHiệnGửiKèmFileTiếnTrình
+  > input {
+  position: absolute;
+  top: -20px;
+  width: 305px;
+  transition: all 0.5s linear;
+
+  z-index: 1;
+}
+.tiếnTrìnhXửLý__côngCụ--ôNhập > div {
+  position: absolute;
+  right: 10px;
+  top: -2px;
+  transform: translateY(50%);
+  width: 20px;
+}
+
+.tiếnTrìnhXửLý__côngCụ--ôNhập > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__côngCụ--ôNhập input::placeholder {
+  font-style: italic;
+  color: #c1c0c0;
+  font-size: 13px;
+}
+
+.tiếnTrìnhXửLý__tiêuĐề--thôngTin div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__côngCụ > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+.tiếnTrìnhXửLý__côngCụ--gửi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+}
+
+.tiếnTrìnhXửLý__côngCụ--đínhKèm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  position: relative;
+}
+.tiếnTrìnhXửLý__côngCụ--đínhKèm input {
+  position: absolute;
+  width: 40px;
+  height: 35px;
+  opacity: 0;
+}
+
+.tiếnTrìnhXửLý__côngCụ--gửi img,
+.tiếnTrìnhXửLý__côngCụ--đínhKèm img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách {
+  margin: 20px 10px 0 10px;
+  position: relative;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách::-webkit-scrollbar {
+  width: 0; /* Ẩn thanh cuộn trên Chrome, Safari và các trình duyệt webkit */
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách > div {
+  position: relative;
+  transition: all 0.4s linear;
+  animation: ẩnHiệnTinNhắn 0.5s linear;
+}
+
+@keyframes ẩnHiệnTinNhắn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện {
+  position: relative;
+  z-index: 0;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất > div:first-child {
+  display: flex;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất > div:last-child {
+  font-size: 11px;
+  position: absolute;
+  top: 11px;
+  right: 10px;
+  font-style: italic;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện > div:first-child {
+  font-size: 11px;
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  font-style: italic;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện > div:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện
+  > div:last-child
+  > div:first-child {
+  background-image: radial-gradient(circle at center, #dadada, #ededed);
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 22px;
+  margin-top: 8px;
+  margin-right: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #666666;
+  font-weight: 700;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện
+  > div:last-child
+  > div:last-child {
+  background-image: radial-gradient(circle at center, #006837, #009045);
+  padding: 0 15px;
+  height: 65px;
+  border-radius: 22px;
+  margin-bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #fff;
+  font-weight: 700;
+  z-index: 2;
+  font-size: 13px;
+  border: 1px solid #006838;
+  max-width: 145px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện
+  > div:last-child
+  > div:first-child
+  p {
+  margin: 3px 20px 0 0;
+  font-style: italic;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất
+  > div:first-child
+  > div:first-child {
+  background-image: radial-gradient(circle at center, #006837, #009045);
+  padding: 0 15px;
+  height: 65px;
+  border-radius: 22px;
+  margin-bottom: -40px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #fff;
+  font-weight: 700;
+  z-index: 2;
+  font-size: 13px;
+  border: 1px solid #006838;
+  max-width: 145px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất
+  > div:first-child
+  > div:first-child
+  p,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiThựcHiện
+  > div:last-child
+  > div:last-child
+  p {
+  margin-top: 6px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất
+  > div:first-child
+  > div:last-child {
+  background-image: radial-gradient(circle at center, #dadada, #ededed);
+  padding: 0 15px;
+  height: 50px;
+  border-radius: 22px;
+  margin-top: 8px;
+  margin-left: -30px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: #666666;
+  font-weight: 700;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  z-index: 1;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--thôngTinThêmNgườiĐềXuất
+  > div:first-child
+  > div:last-child
+  p {
+  margin: 3px 0 0 20px;
+  font-style: italic;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung {
+  position: sticky;
+  background-color: #fff;
+  border: 1px solid #009045;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: -30px;
+  z-index: 4;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối {
+  position: absolute;
+  bottom: -50px;
+  border-radius: 20px;
+  height: 100px;
+  width: 100%;
+  background-color: #006837;
+  z-index: 2;
+  animation: topToBottom 0.5s ease-in-out;
+  transition: all 0.5s linear;
+}
+
+@keyframes topToBottom {
+  0% {
+    transform: translateY(-40px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm {
+  position: absolute;
+  bottom: -135px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 65px;
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #d8d8d8;
+  z-index: 1;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung__vaiTrò {
+  background-color: #e6e6e6;
+  margin-top: 2px;
+  border-radius: 20px;
+  font-size: 10px;
+  height: 20px;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung > div:first-child {
+  margin: 0 auto;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung > div:first-child span {
+  font-weight: 800;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung > div:last-child {
+  display: flex;
+  font-size: 11px;
+  gap: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung > div:last-child > div:first-child {
+  background: linear-gradient(to top, #fafafa, #e4e4e4);
+  border-radius: 20px;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 1px #dddddd;
+  color: #545454;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung
+  > div:last-child
+  > div:first-child.vôHiệuHóa {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung > div:last-child > div:last-child {
+  background: linear-gradient(to right, #009045, #006838 50%, #009045);
+  border-radius: 20px;
+  padding: 4px 10px;
+  box-shadow: 2px 2px 1px #c7d8b6;
+  color: #fff;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--nộiDung
+  > div:last-child
+  > div:last-child.vôHiệuHóa {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 7.5px 10px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:first-child > div {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:first-child > div img,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:last-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:first-child {
+  position: relative;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:first-child input {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  width: 290px;
+  height: 35px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:first-child input::placeholder {
+  font-style: italic;
+  color: #c1c0c0;
+  font-size: 11px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--từChối > div:last-child {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin: ; */
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm {
+  display: flex;
+  align-items: end;
+  padding: 5px 5px 7px 10px;
+  gap: 10px;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm > div {
+  position: relative;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm > div > div:first-child {
+  background: linear-gradient(to top, #fafafa, #e4e4e4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 1px #dddddd;
+  gap: 10px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm
+  > div
+  > div:first-child
+  > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm
+  > div
+  > div:first-child
+  > div:last-child {
+  width: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm
+  > div
+  > div:first-child
+  > div:last-child
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaẢnh {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 35px;
+  left: 0;
+  gap: 5px;
+  background-color: #ffffff;
+  box-shadow: -1px 1px 10px #ccc;
+  padding: 5px;
+  border-radius: 10px;
+  animation: hiệnFileXemTrước 0.5s linear;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaẢnh > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 72px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaẢnh > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaVideo,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaTàiLiệu {
+  position: absolute;
+  left: 0;
+  top: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: -1px 1px 10px #ccc;
+  border-bottom: 3px solid #ccc;
+  font-size: 13px;
+  animation: hiệnFileXemTrước 0.5s linear;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaVideo > div,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaTàiLiệu > div {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  height: 30px;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaVideo
+  > div
+  > div:first-child,
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm__boxChứaTàiLiệu
+  > div
+  > div:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: -3px;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm
+  > div
+  > div:first-child.fileTrướcKhiGửiChọn {
+  background-image: radial-gradient(circle at center, #006837, #009045);
+  color: #fff;
+  transition: all 0.5s linear;
+}
+.tiếnTrìnhXửLý__tinNhắn__danhSách--dữLiệuThêm
+  > div
+  > div:first-child.fileTrướcKhiGửiChọn
+  > div:first-child {
+  color: #fff;
+}

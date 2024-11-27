@@ -1,0 +1,633 @@
+.hộpChọnNgày,
+.hộpViệCầnLàm,
+.menu__gửiFileKhiThêmCôngViệc,
+.menu__chủĐềCôngViệc {
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: -1px 2px 10px #c8c8c8;
+  font-size: 13px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #c8c8c8;
+  border-bottom: 3px solid #999999;
+  position: absolute;
+  top: 33px;
+  left: 0;
+  animation: hiệnHộpLựaChọn 0.5s linear;
+}
+
+@keyframes hiệnHộpLựaChọn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.hộpChọnNgày > div,
+.hộpViệCầnLàm > div,
+.menu__gửiFileKhiThêmCôngViệc > div,
+.menu__chủĐềCôngViệc > div {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 13px 10px;
+  width: 85px;
+}
+
+.option--màuĐậm {
+  background-color: #f2f2f2;
+}
+
+.option--màuĐậm2 {
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Hộp chọn việc cần làm */
+.hộpViệCầnLàm {
+  right: 0;
+  left: -120px;
+}
+
+.hộpViệCầnLàm > div {
+  width: 150px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc {
+  position: absolute;
+  right: 10px;
+  width: 150px;
+  z-index: 1000;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: -1px 2px 10px #c8c8c8;
+  font-size: 13px;
+  border: 0.01px solid var(--lightBlue-color);
+  border-radius: 20px;
+  border-bottom: 3px solid var(--lightBlue-color);
+  top: 33px;
+  animation: hiệnHộpLựaChọn 0.5s linear;
+}
+
+.làmMờChứcNăngChính::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.hộpChọnTùyChỉnhCôngViệc > div {
+  position: relative;
+}
+
+.hộpChọnTùyChỉnhCôngViệc > div > div:first-child {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 45px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc > div > div:first-child > div:first-child {
+  width: 5px;
+  margin-left: 10px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc > div > div:first-child > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hộpChọnTùyChỉnhCôngViệc > div > div:first-child > div:nth-child(2) {
+  line-height: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hộpChọnTùyChỉnhCôngViệc
+  > div
+  > div:first-child
+  > div:nth-child(2).chứcNăngĐangHạnChế {
+  color: #878787 !important;
+}
+
+.hộpChọnTùyChỉnhCôngViệc
+  > div
+  > div:first-child
+  > div:nth-child(2)
+  > div:last-child {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__quảnLýCôngViệc,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự,
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi,
+.hộpChọnTùyChỉnhCôngViệc__phảnHồiCôngViệc,
+.hộpChọnTùyChỉnhCôngViệc__khenThưởng {
+  position: absolute;
+  left: -150px;
+  width: 140px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: -1px 2px 10px #c8c8c8;
+  font-size: 13px;
+  border: 0.01px solid var(--lightBlue-color);
+  border-radius: 20px;
+  border-bottom: 3px solid var(--lightBlue-color);
+  animation: hiệnHộpLựaChọn 0.5s linear;
+  top: 0;
+}
+.hộpChọnTùyChỉnhCôngViệc__phảnHồiCôngViệc.nhậnCôngViệc {
+  top: -180px !important;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__quảnLýCôngViệc {
+  z-index: 5;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự {
+  z-index: 4;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi {
+  z-index: 3;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__phảnHồiCôngViệc {
+  z-index: 2;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__khenThưởng {
+  z-index: 1;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự {
+  width: 135px;
+  left: -145px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi {
+  width: 140px;
+  left: -150px;
+  top: 0;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__quảnLýCôngViệc > div,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự > div,
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi > div,
+.hộpChọnTùyChỉnhCôngViệc__phảnHồiCôngViệc > div,
+.hộpChọnTùyChỉnhCôngViệc__khenThưởng > div {
+  display: flex;
+  align-items: center;
+  height: 45px;
+  position: relative;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__khenThưởng > div {
+  line-height: 15px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự > div > div:first-child,
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi > div > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding-right: 10px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự
+  > div
+  > div:first-child
+  > div:last-child,
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi
+  > div
+  > div:first-child
+  > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự > div > div > div:last-child > img,
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi > div > div > div:last-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiDuyệt,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--giaoViệcChoAi,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiXem,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiGiámSát {
+  position: absolute;
+  right: -145px;
+  width: 140px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: -1px 2px 10px #c8c8c8;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 0.01px solid var(--lightBlue-color);
+  border-bottom: 3px solid var(--lightBlue-color);
+  animation: hiệnHộpLựaChọn 0.5s linear;
+  top: 0;
+  overflow: hidden;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiDuyệt > div,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--giaoViệcChoAi > div,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiXem > div,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiGiámSát > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 45px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiDuyệt > div > div:first-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--giaoViệcChoAi > div > div:first-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiXem > div > div:first-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiGiámSát > div > div:first-child {
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiDuyệt
+  > div
+  > div:first-child
+  > img,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--giaoViệcChoAi
+  > div
+  > div:first-child
+  > img,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiXem
+  > div
+  > div:first-child
+  > img,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiGiámSát
+  > div
+  > div:first-child
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiDuyệt > div > div:last-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--giaoViệcChoAi > div > div:last-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiXem > div > div:last-child,
+.hộpChọnTùyChỉnhCôngViệc__tươngTácNhânSự--gửiAiGiámSát > div > div:last-child {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 10px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc {
+  position: absolute;
+  right: -175px;
+  width: 170px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 1px 3px 10px #adadad;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 0.01px solid var(--lightBlue-color);
+  border-bottom: 3px solid var(--lightBlue-color);
+  animation: hiệnHộpLựaChọn 0.5s linear;
+  top: 0;
+  overflow: hidden;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc > div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px 7px 10px;
+  gap: 10px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:first-child
+  > div:first-child {
+  color: var(--darkBlue-color);
+  font-style: italic;
+  font-weight: 900;
+  line-height: 11px;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:first-child
+  > div:first-child
+  > div:first-child {
+  /* margin-left: 17px; */
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:first-child
+  > div:first-child
+  > div:last-child {
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:first-child
+  > div:last-child
+  input {
+  width: 90px;
+  border: none;
+  outline: none;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:first-child
+  > div:last-child
+  input::placeholder {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 13px;
+  color: #999999;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc > div:nth-child(3) {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: -29px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc--boder {
+  height: 30px;
+  border-top: 0.1px solid #e1dfdf;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 45px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:nth-child(3)
+  > div
+  > div:first-child {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #878787;
+  font-weight: 800;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc
+  > div:nth-child(3)
+  > div
+  > div:last-child {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-left: 1px solid #e0e0e0;
+  padding-left: 8px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc {
+  position: absolute;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc
+  > div:first-child {
+  z-index: 2;
+  font-weight: 800;
+  color: var(--darkBlue-color);
+  font-style: italic;
+  font-size: 13px;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc
+  > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  margin-bottom: 2px;
+  z-index: 2;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc
+  > div:nth-child(2)
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc
+  > div:nth-child(3) {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__thêmCôngViệc
+  > div:nth-child(3)
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* không được click */
+.khôngClick {
+  pointer-events: none;
+}
+
+/* Chọn chức năng đưa file vào */
+.hộpChọnTùyChỉnhCôngViệc__quảnLýCôngViệc > div:nth-child(3) {
+  position: relative;
+}
+
+.hộpChọnTùyChỉnhCôngViệc__quảnLýCôngViệc > div:nth-child(3) input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+/* Hộp người cần duyệt */
+.hộpCôngViệc__thôngTin--hộp5 {
+  position: relative;
+}
+
+.boxThôngTinNgườiCầnDuyệt {
+  position: absolute;
+  width: 180px;
+  display: inline-block;
+  background-color: #fff;
+  box-shadow: 1px 3px 10px #adadad;
+  font-size: 13px;
+  border-radius: 20px;
+  border: 0.01px solid var(--lightBlue-color);
+  border-bottom: 3px solid var(--lightBlue-color);
+  animation: hiệnHộpLựaChọn 0.5s linear;
+  top: 40px;
+  right: 0;
+  overflow: hidden;
+}
+
+.boxThôngTinNgườiCầnDuyệt > div {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100% !important;
+  padding: 10px 20px;
+}
+
+.boxThôngTinNgườiCầnDuyệt > div > div:first-child {
+}
+
+.boxThôngTinNgườiCầnDuyệt > div > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.boxThôngTinNgườiCầnDuyệt > div > div:nth-child(2) > div:first-child {
+  width: 20px;
+  height: 20px;
+  border-radius: 100rem;
+  overflow: hidden;
+}
+
+.boxThôngTinNgườiCầnDuyệt > div > div:nth-child(2) > div:first-child > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.boxThôngTinNgườiCầnDuyệt > div > div:nth-child(2) > div:not(:first-child) {
+  width: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxThôngTinNgườiCầnDuyệt
+  > div
+  > div:nth-child(2)
+  > div:not(:first-child)
+  > img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.icon-KhôngXácNhận {
+  width: 12px !important;
+  margin: 0 3px 0 1px;
+}
+
+.chânTrang__dsXemSau {
+  position: relative;
+}
+
+.menu__chủĐềCôngViệc {
+  top: -210px;
+  right: 0;
+  left: -150px;
+  border-bottom: 3px solid var(--lightBlue-color);
+}
+.menu__chủĐềCôngViệc > div {
+  width: 100%;
+  padding: 0;
+}
+.menu__chủĐềCôngViệc > div > div {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.menu__chủĐềCôngViệc > div > div:first-child {
+  width: 25%;
+  border-right: 0.1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+}
+.menu__chủĐềCôngViệc > div > div:last-child {
+  width: 75%;
+  margin-left: 10px;
+}
+
+/* hộp khi gửi file thêm công việc */
+.menu__gửiFileKhiThêmCôngViệc > div {
+  position: relative;
+}
+.menu__gửiFileKhiThêmCôngViệc input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: -10px;
+  opacity: 0;
+}
+.menu__chủĐềCôngViệc {
+  box-shadow: -1px 2px 10px #c8c8c8;
+  border: 0.01px solid var(--lightBlue-color);
+  border-radius: 20px;
+  border-bottom: 3px solid var(--lightBlue-color);
+}
+
+/* List chủ đề */
+.hộpChọnTùyChỉnhCôngViệc__hỗTrợTheoDõi--chủĐềCôngViệc__list {
+  max-height: 170px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}

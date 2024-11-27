@@ -1,0 +1,129 @@
+/* Tiêu đề */
+.tiêuĐề--login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tiêuĐề--login > div {
+  width: 375.2px !important;
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tiêuĐề--login > div > h5 {
+  font-weight: 600;
+}
+.tiêuĐề--login > div > h5:first-child {
+  font-style: italic;
+}
+.tiêuĐề--login > div > h3 {
+  margin-top: -3px;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+/* input đăng nhập */
+.form--login {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  z-index: 2;
+}
+.form--login > div {
+  width: 375.2px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form--login > div > div > div input {
+  outline: none;
+  border: 1px solid #8ad7a9;
+  width: 280px;
+  height: 30px;
+  padding: 20px 40px 20px 15px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+.form--login > div > div > div input::placeholder {
+  font-style: italic;
+  color: #ccc;
+  font-size: 13px;
+}
+.form--login > div > div > div {
+  position: relative;
+}
+.form--login > div > div > div > div {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+}
+.form--login > div > div > div > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form--login > div > div > div:last-child {
+  margin-top: 10px;
+}
+
+.form--login > div > div:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  align-items: center;
+  margin-top: 10px;
+}
+.form--login > div > div:nth-child(2) > div:first-child {
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form--login > div > div:nth-child(2) > div:first-child img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form--login > div > div:nth-child(2) > div:nth-child(2) {
+  color: #009245;
+  font-size: 13px;
+  margin: -20px 10px 0 0;
+}
+/* Ảnh nền */
+.ảnhNền-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.ảnhNền-login > div {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ảnhNền-login > div > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.ảnhNền-login > div > div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
